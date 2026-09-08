@@ -8,8 +8,16 @@ pour artisans du bâtiment et boutiques indépendantes. Nantes et Loire-Atlantiq
 | Fichier | Rôle |
 | --- | --- |
 | `index.html` | Accueil : constat, avantages, méthode, avis, tarifs, FAQ, CTA |
+| `tarifs.html` | Formules 690/790/990 € et packs de maintenance 14,90/19,90/29,90 € |
+| `blog.html` | Article : pourquoi un site change tout pour un artisan |
+| `a-propos.html` | Présentation, valeurs, comparaison avec une agence |
 | `contact.html` | Page contact avec formulaire de projet |
 | `mentions-legales.html` | Mentions légales |
+| `favicon-32/192/512.png` | Icônes du site (K Kora sur fond anthracite) |
+| `apple-touch-icon.png` | Icône iOS |
+| `og-image.png` | Image de partage réseaux sociaux (1200×630) |
+| `site.webmanifest` | Manifeste PWA |
+| `logo-k.png` | Logo K détouré, fond transparent |
 | `robots.txt` | Indexation ouverte + déclaration du sitemap |
 | `sitemap.xml` | Plan du site |
 
@@ -35,6 +43,10 @@ La clé d'accès est intégrée dans le HTML ; les demandes arrivent sur
 
 Le formulaire de rendez-vous envoie en plus deux champs : `creneaux`
 (disponibilités cochées) et `format` (Google Meet ou téléphone).
+
+## Google Analytics
+
+Le tag GA4 `G-KNCGG0G9PQ` est présent en tête du `<head>` de chaque page.
 
 ## SEO
 
