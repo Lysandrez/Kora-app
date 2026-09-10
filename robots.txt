@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /mentions-legales.html
+Disallow: /mentions-legales/
 
 Sitemap: https://kora-lab.fr/sitemap.xml

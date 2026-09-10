@@ -8,11 +8,11 @@ pour artisans du bâtiment et boutiques indépendantes. Nantes et Loire-Atlantiq
 | Fichier | Rôle |
 | --- | --- |
 | `index.html` | Accueil : constat, avantages, méthode, avis, tarifs, FAQ, CTA |
-| `tarifs.html` | Formules 690/790/990 € et packs de maintenance 14,90/19,90/29,90 € |
-| `blog.html` | Article : pourquoi un site change tout pour un artisan |
-| `a-propos.html` | Présentation, valeurs, comparaison avec une agence |
-| `contact.html` | Page contact avec formulaire de projet |
-| `mentions-legales.html` | Mentions légales |
+| `tarifs/index.html` | Formules 690/790/990 € et packs de maintenance 14,90/19,90/29,90 € |
+| `blog/index.html` | Article : pourquoi un site change tout pour un artisan |
+| `a-propos/index.html` | Présentation, valeurs, comparaison avec une agence |
+| `contact/index.html` | Page contact avec formulaire de projet |
+| `mentions-legales/index.html` | Mentions légales |
 | `favicon-32/192/512.png` | Icônes du site (K Kora sur fond anthracite) |
 | `apple-touch-icon.png` | Icône iOS |
 | `og-image.png` | Image de partage réseaux sociaux (1200×630) |
