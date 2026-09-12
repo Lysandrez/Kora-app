@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Allow: /favicon.ico
+Allow: /*.png
 Disallow: /mentions-legales/
 
 Sitemap: https://kora-lab.fr/sitemap.xml
