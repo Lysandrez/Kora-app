@@ -1,11 +1,11 @@
 {
-  "name": "KoraLab",
-  "short_name": "KoraLab",
-  "description": "Création de sites internet 100 % personnalisés et référencement local pour artisans et commerces.",
+  "name": "Kora Lab",
+  "short_name": "Kora Lab",
+  "description": "Sites internet clé en main pour les artisans du bâtiment, dès 190 €.",
   "lang": "fr",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f7f4ee",
+  "background_color": "#f4f1ec",
   "theme_color": "#33302b",
   "icons": [
     {
@@ -21,14 +21,7 @@
     {
       "src": "/favicon-512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "/favicon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
+      "type": "image/png"
     }
   ]
 }

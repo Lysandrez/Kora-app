@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maquette de site internet gratuite pour artisans | Kora Lab</title>
+<meta name="description" content="Recevez gratuitement la maquette de votre site internet sous 48 h. Sans engagement, pour les artisans du bâtiment.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://kora-lab.fr/maquette-gratuite/">
+<meta name="theme-color" content="#f4f1ec">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Kora Lab">
+<meta property="og:title" content="Maquette de site internet gratuite pour artisans | Kora Lab">
+<meta property="og:description" content="Recevez gratuitement la maquette de votre site internet sous 48 h. Sans engagement, pour les artisans du bâtiment.">
+<meta property="og:image" content="https://kora-lab.fr/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/fonts/archivo-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Archivo';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/archivo-latin-700-normal.woff2) format('woff2')}@font-face{font-family:'Archivo';font-style:italic;font-weight:700;font-display:swap;src:url(/fonts/archivo-latin-700-italic.woff2) format('woff2')}@font-face{font-family:'Archivo';font-style:normal;font-weight:800;font-display:swap;src:url(/fonts/archivo-latin-800-normal.woff2) format('woff2')}@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/manrope-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/manrope-latin-500-normal.woff2) format('woff2')}@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/manrope-latin-600-normal.woff2) format('woff2')}@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/manrope-latin-700-normal.woff2) format('woff2')}</style>
+<style>
+/* Plan : blog clair et lisible ; couvertures dessinées en CSS par catégorie ; colonne de lecture de 68 caractères */
+:root{
+  --fond:oklch(0.968 0.008 85);
+  --fond-2:oklch(0.935 0.014 82);
+  --carte:#fff;
+  --encre:oklch(0.21 0.012 60);
+  --encre-2:oklch(0.45 0.012 60);
+  --trait:oklch(0.88 0.012 80);
+  --or:oklch(0.72 0.11 80);
+  --or-fonce:oklch(0.52 0.09 75);
+  --nuit:oklch(0.2 0.01 60);
+  --display:'Archivo','Arial Narrow',Arial,sans-serif;
+  --texte:'Manrope','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--fond);color:var(--encre);font-family:var(--texte);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{text-wrap:balance}
+a{color:var(--or-fonce)}
+:focus-visible{outline:3px solid var(--or);outline-offset:3px;border-radius:6px}
+[hidden]{display:none!important}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--display);font-style:italic;font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--or-fonce)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;border-radius:14px;font-weight:700;font-size:16px;text-decoration:none;border:1px solid transparent;transition:transform .18s ease,background .2s ease,border-color .2s ease;cursor:pointer;font-family:inherit}
+.btn:hover{transform:translateY(-2px)}
+.btn-plein{background:var(--encre);color:var(--fond)}
+.btn-plein:hover{background:oklch(0.3 0.03 70);color:var(--fond)}
+.btn-ligne{border-color:var(--trait);color:var(--encre);background:transparent}
+.btn-or{background:var(--or);color:var(--nuit)}
+.btn-or:hover{background:oklch(0.8 0.1 82);color:var(--nuit)}
+header{position:sticky;top:0;z-index:50;background:oklch(0.968 0.008 85 / .92);backdrop-filter:blur(14px);border-bottom:1px solid oklch(0.88 0.012 80 / .6)}
+.barre{display:flex;align-items:center;gap:18px;padding-top:16px;padding-bottom:16px}
+.logo{font-size:20px;font-weight:700;letter-spacing:-.01em;color:var(--encre);text-decoration:none;margin-right:auto}
+.logo span{color:oklch(0.47 0.015 60);font-weight:500}
+.nav{display:flex;gap:2px}
+.nav a{padding:9px 13px;border-radius:999px;font-size:14.5px;font-weight:500;color:var(--encre-2);text-decoration:none}
+.nav a:hover,.nav a[aria-current]{background:var(--fond-2);color:var(--encre)}
+.menu-mobile{display:none}
+.menu-mobile summary{list-style:none;width:46px;height:46px;border-radius:14px;border:1px solid var(--trait);background:var(--fond-2);display:flex;align-items:center;justify-content:center;cursor:pointer;font-weight:700}
+.menu-mobile summary::-webkit-details-marker{display:none}
+.menu-mobile nav{position:absolute;left:16px;right:16px;top:70px;background:var(--fond-2);border-radius:20px;padding:10px;display:grid;gap:2px;box-shadow:0 20px 40px oklch(0.2 0.01 60 / .12)}
+.menu-mobile nav a{padding:14px 16px;border-radius:12px;font-weight:600;color:var(--encre);text-decoration:none}
+@media (max-width:960px){.nav,.barre>.btn{display:none}.menu-mobile{display:block}}
+.fil{font-size:13.5px;color:var(--encre-2)}
+.fil a{color:inherit}
+
+/* Couvertures */
+.couv{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;display:flex;align-items:flex-end;padding:18px}
+.couv-prix{background:oklch(0.93 0.045 82)}
+.couv-google{background:var(--nuit)}
+.couv .motif{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:800;letter-spacing:-.05em;line-height:1}
+.couv-prix .motif{font-size:clamp(70px,11vw,150px);color:oklch(0.72 0.11 80 / .55)}
+.couv-google .motif{gap:10px}
+.couv-google .motif span{width:22%;aspect-ratio:9/16;border-radius:12px;border:3px solid oklch(0.75 0.11 80 / .7)}
+.couv-google .motif span:last-child{background:oklch(0.75 0.11 80 / .25)}
+.couv-tel{background:var(--nuit)}
+.couv-tel .motif{gap:10px}
+.couv-tel .motif span{width:22%;aspect-ratio:9/16;border-radius:12px;border:3px solid oklch(0.75 0.11 80 / .7)}
+.couv-tel .motif span:last-child{background:oklch(0.75 0.11 80 / .25)}
+.couv-recherche{background:oklch(0.9 0.02 80)}
+.couv-recherche .motif{flex-direction:column;gap:10px;font-family:var(--texte);letter-spacing:0}
+.couv-recherche .r-barre{background:var(--carte);border-radius:999px;padding:10px 22px;font-size:clamp(13px,1.4vw,17px);font-weight:600;color:var(--encre-2);box-shadow:0 6px 18px oklch(0.2 0.01 60 / .1)}
+.couv-recherche .r-res{background:var(--encre);color:var(--or);border-radius:12px;padding:8px 16px;font-family:var(--display);font-weight:800;font-size:clamp(18px,2vw,24px)}
+.couv-pin{background:oklch(0.88 0.04 145)}
+.couv-pin .pin{width:22%;aspect-ratio:1;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:oklch(0.5 0.12 30);display:flex;align-items:center;justify-content:center}
+.couv-pin .pin::after{content:"";width:38%;aspect-ratio:1;border-radius:999px;background:var(--carte)}
+.couv-chiffre{background:oklch(0.92 0.04 40)}
+.couv-chiffre .motif{font-size:clamp(90px,13vw,170px);color:oklch(0.55 0.13 35 / .7)}
+.couv-metier .motif{font-size:clamp(28px,4vw,52px);text-transform:uppercase;letter-spacing:-.03em}
+.couv-vert{background:oklch(0.9 0.05 135)}.couv-vert .motif{color:oklch(0.4 0.08 140)}
+.couv-bleu{background:oklch(0.92 0.03 245)}.couv-bleu .motif{color:oklch(0.42 0.11 255)}
+.couv-avis{background:var(--nuit)}
+.couv-avis .motif{font-size:clamp(30px,4.5vw,58px);color:var(--or);letter-spacing:.05em}
+.couv-guillemets{background:oklch(0.93 0.045 82)}
+.couv-guillemets .motif{font-size:clamp(80px,12vw,150px);color:oklch(0.5 0.09 75)}
+.couv-fleche{background:oklch(0.9 0.05 150)}
+.couv-fleche .motif{font-size:clamp(90px,13vw,170px);color:oklch(0.45 0.1 150 / .75)}
+.couv .cat{position:relative;background:var(--carte);color:var(--encre);border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+
+/* Liste */
+.tete-blog{padding:clamp(36px,5vw,72px) 0 clamp(28px,3vw,40px)}
+.tete-blog h1{font-family:var(--display);font-weight:800;font-size:clamp(36px,6vw,80px);line-height:.95;letter-spacing:-.04em;text-transform:uppercase;margin-top:14px;max-width:16ch}
+.tete-blog h1 span{color:oklch(0.63 0.1 78)}
+.tete-blog p.chapo{font-size:clamp(16.5px,1.6vw,19px);color:var(--encre-2);max-width:56ch;margin-top:18px}
+.filtres{display:flex;gap:8px;flex-wrap:wrap;margin-top:28px}
+.filtres button{border:1px solid var(--trait);background:var(--carte);border-radius:999px;padding:9px 16px;font:inherit;font-size:14.5px;font-weight:600;cursor:pointer;color:var(--encre)}
+.filtres button[aria-pressed="true"]{background:var(--encre);color:var(--fond);border-color:var(--encre)}
+.articles{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:0;margin:0 0 clamp(56px,7vw,96px)}
+.articles li{list-style:none}
+.carte{display:flex;flex-direction:column;gap:14px;text-decoration:none;color:inherit;background:var(--carte);border:1px solid var(--trait);border-radius:24px;padding:14px 14px 24px;height:100%;transition:transform .2s ease,box-shadow .2s ease}
+.carte:hover{transform:translateY(-3px);box-shadow:0 16px 36px oklch(0.2 0.01 60 / .1)}
+.carte .meta{font-size:13.5px;color:var(--encre-2);padding:0 8px}
+.carte h2{font-size:clamp(20px,2vw,24px);line-height:1.25;letter-spacing:-.015em;padding:0 8px}
+.carte p{color:var(--encre-2);padding:0 8px;font-size:15.5px}
+.articles li.une{grid-column:1/-1}
+.une .carte{display:grid;grid-template-columns:1.2fr 1fr;grid-template-rows:auto auto auto 1fr;column-gap:28px;align-items:start;padding:14px}
+.une .couv{grid-row:1/5;aspect-ratio:16/9;height:100%}
+.une .meta{padding-top:18px}
+.une h2{font-family:var(--display);font-weight:800;font-size:clamp(24px,2.8vw,36px);line-height:1.02;letter-spacing:-.03em;text-transform:uppercase}
+.une .lire{align-self:end;padding-bottom:12px}
+@media (max-width:760px){.une .carte{display:flex}.une .couv{height:auto}}
+.carte .lire{font-weight:700;color:var(--or-fonce);padding:0 8px;margin-top:auto}
+@media (max-width:1000px){.articles{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.articles{grid-template-columns:1fr}}
+.cta-bloc{background:var(--nuit);color:oklch(0.97 0.008 85);border-radius:30px;padding:clamp(28px,4vw,56px);display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:clamp(56px,7vw,96px)}
+.cta-bloc h2{font-family:var(--display);font-weight:800;font-size:clamp(24px,3vw,38px);letter-spacing:-.03em;text-transform:uppercase;line-height:1;max-width:20ch}
+.cta-bloc h2 span{color:var(--or)}
+.cta-bloc p{color:oklch(0.78 0.012 80);margin-top:10px;max-width:46ch}
+
+/* Article */
+.article-tete{max-width:860px;margin:0 auto;padding:clamp(28px,4vw,56px) 24px 0}
+.article-tete h1{font-family:var(--display);font-weight:800;font-size:clamp(32px,5vw,58px);line-height:1;letter-spacing:-.035em;text-transform:uppercase;margin-top:16px}
+.infos{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:18px;font-size:14px;color:var(--encre-2)}
+.infos b{color:var(--encre)}
+.article-couv{max-width:1000px;margin:28px auto 0;padding:0 24px}
+.article-couv .couv{aspect-ratio:21/9;border-radius:26px}
+.corps{display:grid;grid-template-columns:240px minmax(0,1fr);gap:clamp(28px,4vw,64px);max-width:1080px;margin:clamp(32px,4vw,56px) auto 0;padding:0 24px}
+.sommaire{position:sticky;top:96px;align-self:start;font-size:14.5px}
+.sommaire summary{list-style:none;cursor:pointer}.sommaire summary::-webkit-details-marker{display:none}
+.sommaire b{display:block;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--encre-2);margin-bottom:10px}
+.sommaire ol{margin:0;padding-left:18px;display:grid;gap:8px}
+.sommaire a{color:var(--encre);text-decoration:none}
+.sommaire a:hover{color:var(--or-fonce)}
+.texte{max-width:68ch;font-size:17.5px;line-height:1.75}
+.texte .chapo-art{font-size:20px;line-height:1.6;color:var(--encre);font-weight:500}
+.texte h2{font-family:var(--display);font-weight:800;font-size:clamp(22px,2.4vw,30px);letter-spacing:-.025em;text-transform:uppercase;line-height:1.05;margin-top:48px;scroll-margin-top:96px}
+.texte p{margin-top:16px;color:oklch(0.3 0.012 60)}
+.texte ul,.texte ol{margin:16px 0 0;padding-left:22px;display:grid;gap:10px;color:oklch(0.3 0.012 60)}
+.texte li::marker{color:var(--or-fonce);font-weight:700}
+.texte strong{color:var(--encre)}
+.texte a:not(.btn){color:var(--or-fonce);font-weight:600;text-underline-offset:3px}
+.texte blockquote{margin:18px 0 0;background:var(--carte);border:1px solid var(--trait);border-left:4px solid var(--or);border-radius:14px;padding:16px 18px;font-size:16.5px;color:var(--encre)}
+.faq-art{display:grid;gap:10px;margin-top:18px}
+.faq-art details{background:var(--carte);border:1px solid var(--trait);border-radius:16px;padding:4px 18px}
+.faq-art summary{cursor:pointer;font-weight:700;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq-art summary::-webkit-details-marker{display:none}
+.faq-art summary::after{content:"+";font-family:var(--display);font-size:20px;color:var(--or-fonce)}
+.faq-art details[open] summary::after{content:"–"}
+.faq-art details p{margin:0 0 14px!important;font-size:16px}
+@media (max-width:760px){.texte{font-size:16.5px;line-height:1.7}.texte .chapo-art{font-size:18px}}
+.vide{display:grid;gap:10px;margin-top:18px}
+.vide span{display:block;height:12px;border-radius:999px;background:oklch(0.9 0.012 80)}
+.vide span:nth-child(2){width:94%}.vide span:nth-child(3){width:97%}.vide span:nth-child(4){width:62%}
+.a-ecrire{display:inline-block;margin-top:14px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--or-fonce);background:oklch(0.95 0.03 82);border:1px dashed var(--or);border-radius:999px;padding:5px 12px}
+.encart{margin-top:40px;background:oklch(0.95 0.03 82);border:1px solid var(--or);border-radius:22px;padding:24px;display:grid;gap:12px}
+.encart b{font-size:18px}
+.encart p{margin:0!important;font-size:16px}
+.encart .btn{justify-self:start;padding:13px 22px;font-size:15px}
+.auteur{display:flex;gap:16px;align-items:center;margin-top:48px;padding-top:28px;border-top:1px solid var(--trait)}
+.auteur .rond{width:52px;height:52px;border-radius:999px;background:var(--encre);color:var(--or);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:800;font-size:22px;flex:none}
+.auteur p{margin:0!important;font-size:15px;color:var(--encre-2)}
+.auteur b{color:var(--encre)}
+@media (max-width:900px){.corps{grid-template-columns:1fr}.sommaire{position:static;background:var(--carte);border:1px solid var(--trait);border-radius:18px;padding:18px}}
+.suite{max-width:1080px;margin:clamp(56px,7vw,96px) auto 0;padding:0 24px}
+.suite > h2{font-family:var(--display);font-weight:800;font-size:clamp(24px,3vw,36px);letter-spacing:-.03em;text-transform:uppercase;margin:12px 0 24px}
+footer{padding:44px 0 60px;font-size:14px;color:oklch(0.5 0.012 60)}
+.pied{display:flex;gap:14px 20px;flex-wrap:wrap;align-items:center}
+.pied a,.pied button{color:inherit;text-decoration:none;background:none;border:0;padding:0;font:inherit;cursor:pointer}
+.pied a:hover,.pied button:hover{color:var(--encre)}
+.pied .marque{margin-right:auto;font-weight:700;color:var(--encre)}
+.cookies{position:fixed;left:16px;right:16px;bottom:16px;z-index:80;max-width:560px;margin-left:auto;background:#fff;border:1px solid var(--trait);border-radius:20px;padding:22px;box-shadow:0 20px 50px oklch(0.2 0.01 60 / .18)}
+.cookies p{font-size:14.5px;color:var(--encre-2)}
+.cookies p strong{color:var(--encre)}
+.cookies-btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.cookies-btns .btn{padding:13px 16px;font-size:15px}
+.cookies-choix{display:grid;gap:10px;margin-top:14px;font-size:14.5px}
+.cookies-choix label{display:flex;gap:10px;align-items:flex-start}
+.cookies-perso{margin-top:12px;background:none;border:0;padding:0;font:inherit;font-size:14px;color:var(--or-fonce);text-decoration:underline;cursor:pointer}
+
+/* Maquette gratuite : page d'atterrissage sans menu ; à gauche la promesse, à droite le formulaire en 2 étapes */
+.tete-simple{border-bottom:1px solid var(--trait)}
+.tete-simple .barre{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px}
+.tete-simple .logo{font-size:20px;font-weight:700;color:var(--encre);text-decoration:none}
+.tete-simple .logo span{color:oklch(0.47 0.015 60);font-weight:500}
+.tete-simple .rassure{font-size:13.5px;font-weight:600;color:var(--encre-2)}
+.mq{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(28px,5vw,72px);align-items:start;padding-top:clamp(28px,4vw,56px);padding-bottom:clamp(48px,6vw,80px)}
+.mq h1{font-family:var(--display);font-weight:800;font-size:clamp(34px,5.2vw,66px);line-height:.96;letter-spacing:-.04em;text-transform:uppercase;margin-top:16px}
+.mq h1 span{color:oklch(0.63 0.1 78)}
+.mq .intro{font-size:clamp(17px,1.8vw,20px);color:var(--encre-2);margin-top:18px;max-width:44ch}
+.points{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px}
+.points li{display:flex;gap:12px;align-items:center;font-weight:600;font-size:16.5px}
+.points li::before{content:"✓";flex:none;width:28px;height:28px;border-radius:999px;background:oklch(0.93 0.035 145);color:oklch(0.42 0.09 150);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px}
+.telephone-mq{margin-top:32px;display:flex;gap:14px;align-items:flex-end}
+.tel-m{width:min(170px,40%);aspect-ratio:9/18;background:var(--fond);border-radius:24px;border:7px solid var(--nuit);padding:12px 9px;display:flex;flex-direction:column;gap:6px;box-shadow:0 20px 40px oklch(0.2 0.01 60 / .2)}
+.tel-m i{display:block;height:6px;border-radius:9px;background:oklch(0.85 0.02 80)}
+.tel-m i:first-child{width:55%;height:9px;background:var(--encre)}
+.tel-m b{display:block;font-family:var(--display);font-size:11px;line-height:1.05;text-transform:uppercase;color:var(--encre);margin-top:4px}
+.tel-m .ph{flex:1;border-radius:8px;background:oklch(0.72 0.07 135);margin-top:4px}
+.tel-m .bt{height:18px;border-radius:6px;background:var(--encre)}
+.tel-m.t2 .ph{background:oklch(0.75 0.06 250)}
+.tel-m.t2{transform:translateY(-18px)}
+.zero{font-family:var(--display);font-weight:800;font-size:clamp(40px,5vw,64px);letter-spacing:-.04em;line-height:1}
+.zero small{display:block;font-family:var(--texte);font-weight:600;font-size:14px;letter-spacing:0;color:var(--encre-2);margin-top:6px}
+
+.carte-form{background:var(--carte);border:1px solid var(--trait);border-radius:30px;padding:clamp(22px,3vw,36px);box-shadow:0 24px 60px oklch(0.2 0.01 60 / .08);position:sticky;top:24px}
+.etapes-f{display:flex;align-items:center;gap:10px;font-size:13.5px;font-weight:700;color:var(--encre-2)}
+.etapes-f span{display:inline-flex;align-items:center;gap:8px}
+.etapes-f b{width:26px;height:26px;border-radius:999px;background:var(--fond-2);display:inline-flex;align-items:center;justify-content:center}
+.etapes-f .actif b{background:var(--encre);color:var(--or)}
+.etapes-f .actif{color:var(--encre)}
+.etapes-f i{flex:1;height:2px;background:var(--trait)}
+.carte-form h2{font-family:var(--display);font-weight:800;font-size:clamp(22px,2.4vw,28px);letter-spacing:-.02em;text-transform:uppercase;margin-top:20px;line-height:1.05}
+.carte-form .sous{color:var(--encre-2);margin-top:6px;font-size:15px}
+form{display:grid;gap:14px;margin-top:20px}
+.champ label,.groupe legend{display:block;font-size:14px;font-weight:700;margin-bottom:7px;padding:0}
+.champ input,.champ select{width:100%;padding:15px 16px;border-radius:12px;border:1px solid var(--trait);background:var(--fond);color:var(--encre);font:inherit;font-size:16px}
+.champ input:focus,.champ select:focus{outline:none;border-color:var(--encre);background:#fff}
+.champ small{display:block;color:var(--encre-2);font-size:13px;margin-top:5px}
+.groupe{border:0;margin:0;padding:0}
+.choix-oui-non{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.choix-oui-non label{display:flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--trait);border-radius:12px;padding:14px;font-weight:600;cursor:pointer;background:var(--fond)}
+.choix-oui-non input{position:absolute;opacity:0}
+.choix-oui-non input:checked + span{color:var(--encre)}
+.choix-oui-non label:has(input:checked){border-color:var(--encre);background:#fff;box-shadow:inset 0 0 0 1px var(--encre)}
+.choix-oui-non label:has(input:focus-visible){outline:3px solid var(--or);outline-offset:2px}
+.ligne2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:520px){.ligne2{grid-template-columns:1fr}}
+.piege{position:absolute;left:-9999px}
+.btn-suivant{background:var(--encre);color:var(--fond);border:0;border-radius:14px;padding:18px;font:inherit;font-weight:800;font-size:17px;cursor:pointer;width:100%}
+.btn-suivant:hover{background:oklch(0.3 0.03 70)}
+.btn-suivant[disabled]{opacity:.6;cursor:wait}
+.retour-etape{background:none;border:0;padding:0;font:inherit;font-size:14px;color:var(--encre-2);text-decoration:underline;cursor:pointer;justify-self:start}
+.sous-bouton{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;font-size:13.5px;color:var(--encre-2)}
+.sous-bouton span::before{content:"✓ ";color:oklch(0.48 0.11 150);font-weight:800}
+.erreur{background:oklch(0.95 0.04 40);color:oklch(0.42 0.12 35);border-radius:12px;padding:12px 14px;font-size:14.5px}
+.mentions-f{font-size:12.5px;color:var(--encre-2);text-align:center}
+.succes{text-align:center;padding:10px 0}
+.succes .coche{width:76px;height:76px;border-radius:999px;background:oklch(0.5 0.13 150);display:flex;align-items:center;justify-content:center;margin:6px auto 0}
+.succes .coche svg{width:40px;height:40px}
+.succes h2{margin-top:18px}
+.succes p{color:var(--encre-2);margin-top:10px}
+.btn-wa{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:20px;background:oklch(0.5 0.13 150);color:#fff;border-radius:14px;padding:17px;font-weight:800;font-size:16.5px;text-decoration:none}
+.btn-wa:hover{background:oklch(0.56 0.15 150);color:#fff}
+@media (max-width:900px){.mq{grid-template-columns:1fr}.carte-form{position:static}.telephone-mq{display:none}}
+
+.bande{background:#fff;border-top:1px solid var(--trait);padding:clamp(48px,6vw,80px) 0}
+.titre-s{font-family:var(--display);font-weight:800;font-size:clamp(24px,3.2vw,38px);line-height:1;letter-spacing:-.03em;text-transform:uppercase;margin-top:12px}
+.trois{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px;padding:0}
+.trois li{list-style:none;background:var(--fond);border-radius:22px;padding:24px}
+.trois .n{font-family:var(--display);font-weight:800;font-size:40px;color:var(--or);line-height:1}
+.trois h3{font-size:18px;margin-top:10px}
+.trois p{color:var(--encre-2);margin-top:6px;font-size:15px}
+@media (max-width:760px){.trois{grid-template-columns:1fr}}
+.faq{max-width:860px;padding-top:clamp(48px,6vw,80px);padding-bottom:clamp(48px,6vw,80px)}
+.faq details{border-bottom:1px solid var(--trait);padding:6px 0}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;font-size:17.5px;font-weight:700}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--display);font-size:24px;color:var(--or-fonce);flex:none}
+.faq details[open] summary::after{content:"–"}
+.faq details p{color:var(--encre-2);padding:0 0 18px;max-width:62ch}
+/* Téléphone : tout centré */
+@media (max-width:760px){
+  .mq,.bande,.faq{text-align:center}
+  .mq .intro,.faq details p{margin-left:auto;margin-right:auto}
+  .points{width:fit-content;max-width:100%;margin-left:auto;margin-right:auto;justify-items:start}
+  .points li{text-align:left}
+  .etapes-f{justify-content:center;font-size:12.5px;gap:8px}
+  .etapes-f span{white-space:nowrap;gap:6px}
+  .etapes-f i{flex:0 0 14px}
+  .carte-form h2,.carte-form .sous{text-align:center}
+  .champ label,.groupe legend{text-align:center;width:100%}
+  .champ input,.champ select{text-align:center;text-align-last:center}
+  .champ small{text-align:center}
+  .retour-etape{justify-self:center}
+  .erreur{text-align:center}
+  .trois li{text-align:center}
+  .faq summary{justify-content:center;text-align:center}
+  .faq summary::after{margin-left:6px}
+  .bande .titre-s::after,.faq .titre-s::after{margin-left:auto!important;margin-right:auto!important}
+}
+
+.m-landing{display:none}
+@media (max-width:760px){
+  main>*:not(.m-landing){display:none!important}
+  .m-landing{display:block;padding-bottom:110px!important}
+  .cookies{bottom:100px!important}
+  .ml-haut{padding:16px 20px 44px;text-align:center;background:radial-gradient(120% 60% at 50% 0%,oklch(0.9 0.07 82 / .6),transparent 72%)}
+  .ml-badge{display:inline-flex;align-items:center;gap:8px;background:oklch(0.93 0.035 145);color:oklch(0.38 0.09 150);border-radius:999px;padding:7px 14px;font-size:12.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+  .ml-badge::before{content:"";width:8px;height:8px;border-radius:999px;background:oklch(0.5 0.13 150);animation:point 2s ease-in-out infinite}
+  @keyframes point{0%,100%{opacity:1}50%{opacity:.35}}
+  .ml-h{font-family:var(--display);font-weight:800;font-size:34px;line-height:.95;letter-spacing:-.04em;text-transform:uppercase;margin-top:12px}
+  .ml-h span{color:oklch(0.6 0.1 76)}
+  .ml-sous{color:var(--encre-2);font-size:16.5px;margin-top:12px}
+  .ml-sous b{color:var(--encre)}
+  .ml-trio{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+  .ml-trio div{background:#fff;border-radius:16px;padding:12px 6px;box-shadow:0 6px 16px oklch(0.2 0.01 60 / .06)}
+  .ml-trio b{display:block;font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:-.02em}
+  .ml-trio small{display:block;font-size:12px;color:var(--encre-2);font-weight:600;margin-top:2px}
+
+  /* questionnaire */
+  .ml-quiz{margin-top:16px;background:#fff;border-radius:26px;padding:20px 18px;box-shadow:0 20px 44px oklch(0.2 0.01 60 / .12);text-align:left}
+  .ml-prog{display:flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700;color:var(--encre-2)}
+  .ml-prog .ml-pbar{flex:1;height:7px;border-radius:999px;background:var(--fond-2);overflow:hidden}
+  .ml-prog .ml-pbar i{display:block;height:100%;width:25%;background:var(--or);border-radius:999px;transition:width .3s ease}
+  .ml-q{display:none;margin-top:16px}
+  .ml-q.actif{display:block;animation:entre .25s ease}
+  @keyframes entre{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:none}}
+  .ml-q h2{font-family:var(--display);font-weight:800;font-size:23px;line-height:1.05;letter-spacing:-.02em;text-transform:uppercase}
+  .ml-q .aide{color:var(--encre-2);font-size:14px;margin-top:6px}
+  .ml-chips{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+  .ml-chips button{border:2px solid var(--trait);background:var(--fond);border-radius:14px;padding:14px 10px;font:inherit;font-weight:700;font-size:15px;color:var(--encre);cursor:pointer}
+  .ml-chips button[aria-pressed="true"]{border-color:var(--encre);background:#fff;box-shadow:inset 0 0 0 1px var(--encre)}
+  .ml-chips.deux button{padding:20px 10px;font-size:17px}
+  .ml-champ{margin-top:12px}
+  .ml-champ label{display:block;font-size:13.5px;font-weight:700;margin-bottom:6px}
+  .ml-champ input{width:100%;padding:16px;border-radius:14px;border:2px solid var(--trait);background:var(--fond);font:inherit;font-size:16px;color:var(--encre)}
+  .ml-champ input:focus{outline:none;border-color:var(--encre);background:#fff}
+  .ml-suivant{width:100%;margin-top:16px;background:var(--encre);color:var(--fond);border:0;border-radius:16px;padding:18px;font:inherit;font-weight:800;font-size:17px;cursor:pointer}
+  .ml-suivant[disabled]{opacity:.6}
+  .ml-retour{background:none;border:0;padding:0;margin-top:12px;font:inherit;font-size:14px;color:var(--encre-2);text-decoration:underline;cursor:pointer}
+  .ml-err{margin-top:10px;background:oklch(0.95 0.04 40);color:oklch(0.42 0.12 35);border-radius:12px;padding:11px 13px;font-size:14px}
+  .ml-err[hidden]{display:none}
+  .ml-garanties{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 14px;margin-top:14px;font-size:12.5px;color:var(--encre-2);font-weight:600}
+  .ml-garanties span::before{content:"✓ ";color:oklch(0.48 0.11 150);font-weight:800}
+  .ml-ok{text-align:center;padding:8px 0}
+  .ml-ok .coche{width:76px;height:76px;border-radius:999px;background:oklch(0.5 0.13 150);display:flex;align-items:center;justify-content:center;margin:4px auto 0}
+  .ml-ok .coche svg{width:40px;height:40px}
+  .ml-ok h2{margin-top:16px}
+  .ml-ok p{color:var(--encre-2);margin-top:8px}
+  .ml-ok .date{display:inline-block;margin-top:12px;background:oklch(0.93 0.035 145);color:oklch(0.3 0.06 150);border-radius:999px;padding:8px 14px;font-weight:800;font-size:14px}
+  .ml-wa{display:flex;align-items:center;justify-content:center;margin-top:16px;background:oklch(0.5 0.13 150);color:#fff;border-radius:16px;padding:17px;font-weight:800;text-decoration:none}
+
+  /* blocs */
+  .ml-bloc{padding:44px 20px 52px;border-radius:30px 30px 0 0;margin-top:-28px;position:relative;box-shadow:0 -12px 30px oklch(0.2 0.01 60 / .07);text-align:center}
+  .ml-blanc{background:#fff}.ml-beige{background:oklch(0.95 0.022 82)}.ml-nuit{background:var(--nuit);color:oklch(0.97 0.008 85)}
+  .ml-etiq{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:oklch(0.9 0.06 82);color:oklch(0.4 0.08 70);padding:7px 13px;border-radius:999px}
+  .ml-titre{font-family:var(--display);font-weight:800;font-size:29px;line-height:1;letter-spacing:-.03em;text-transform:uppercase;margin-top:14px}
+  .ml-titre span{color:oklch(0.6 0.1 76)}
+  .ml-titre::after{content:"";display:block;width:46px;height:5px;border-radius:9px;background:var(--or);margin:14px auto 0}
+  .ml-recu{display:grid;gap:10px;margin-top:20px;text-align:left}
+  .ml-recu div{display:flex;gap:12px;align-items:center;background:var(--fond);border-radius:16px;padding:14px;font-weight:700;font-size:15px}
+  .ml-recu i{flex:none;width:34px;height:34px;border-radius:10px;background:var(--encre);color:var(--or);display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:800}
+  .ml-maqs{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:20px -20px 0;padding:6px 8vw 10px;scrollbar-width:none}
+  .ml-maqs::-webkit-scrollbar{display:none}
+  .ml-maq{flex:0 0 84vw;scroll-snap-align:center;border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 14px 30px oklch(0.2 0.01 60 / .1);text-align:left}
+  .ml-maq .ec{padding:16px;height:170px;display:flex;flex-direction:column;gap:8px}
+  .ml-maq .ec b{font-size:10.5px;letter-spacing:.05em}
+  .ml-maq .ec h3{font-family:var(--display);font-weight:800;font-size:19px;line-height:1.02;text-transform:uppercase;margin-top:auto}
+  .ml-maq .ec span{align-self:flex-start;font-size:11px;font-weight:700;padding:6px 11px;border-radius:8px;color:#fff}
+  .ml-maq .pied{padding:12px 16px;border-top:1px solid var(--trait);font-size:14px;font-weight:700;display:flex;justify-content:space-between}
+  .ml-maq .pied small{color:var(--encre-2);font-weight:600}
+  .ml-obj{display:grid;gap:10px;margin-top:20px;text-align:left}
+  .ml-obj details{background:#fff;border-radius:16px;padding:2px 16px;box-shadow:0 8px 20px oklch(0.2 0.01 60 / .06)}
+  .ml-obj summary{list-style:none;display:flex;justify-content:space-between;gap:10px;padding:15px 0;font-weight:800;font-size:15.5px;cursor:pointer}
+  .ml-obj summary::-webkit-details-marker{display:none}
+  .ml-obj summary::after{content:"+";font-family:var(--display);font-size:22px;color:var(--or-fonce)}
+  .ml-obj details[open] summary::after{content:"–"}
+  .ml-obj p{color:var(--encre-2);padding-bottom:15px;font-size:14.5px}
+  .ml-final p{color:oklch(0.8 0.012 80);margin-top:10px}
+  .ml-cta{display:flex;justify-content:center;margin-top:18px;background:var(--or);color:var(--nuit);border-radius:16px;padding:18px;font-weight:800;font-size:17px;text-decoration:none}
+
+  /* barre fixe */
+  .ml-barre{position:fixed;left:0;right:0;bottom:0;z-index:75;background:oklch(1 0 0 / .97);backdrop-filter:blur(12px);border-top:1px solid var(--trait);padding:10px 16px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -10px 30px oklch(0.2 0.01 60 / .1);transition:transform .25s ease}
+  .ml-barre.cache{transform:translateY(110%)}
+  .ml-barre a{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--encre);color:var(--fond);border-radius:14px;padding:15px;font-weight:800;font-size:16px;text-decoration:none}
+  .ml-barre small{display:block;text-align:center;font-size:12px;color:var(--encre-2);margin-top:6px}
+}
+</style>
+<style>
+@media (max-width:760px){
+.carrousel{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px!important;margin-left:-24px!important;margin-right:-24px!important;padding:6px 8vw 8px!important;scrollbar-width:none;-webkit-overflow-scrolling:touch;grid-template-columns:none!important}
+.carrousel::-webkit-scrollbar{display:none}
+.carrousel>*{flex:0 0 84vw!important;max-width:84vw;min-width:0;scroll-snap-align:center}
+.carrousel>[hidden]{display:none!important}
+.points-c{display:flex;justify-content:center;gap:7px;margin-top:14px}
+.points-c button{width:8px;height:8px;border-radius:999px;border:0;padding:0;background:oklch(0.82 0.015 80);cursor:pointer;transition:width .2s ease,background .2s ease}
+.points-c button[aria-current="true"]{width:22px;background:oklch(0.21 0.012 60)}
+}
+@media (min-width:761px){.points-c{display:none}}
+</style>
+<style>
+@media (max-width:760px){
+/* sections empilées, couleurs alternées */
+main>*:not(:first-child){padding-top:60px!important;padding-bottom:64px!important;border-radius:30px 30px 0 0;margin-top:-30px;position:relative;box-shadow:0 -12px 30px oklch(0.2 0.01 60 / .07);border-top:0}
+main>*:nth-child(even):not(:first-child){background:#fff!important}
+main>*:nth-child(odd):not(:first-child):not(.bande-qui){background:oklch(0.95 0.022 82)!important}
+main>.bande-qui{background:var(--nuit)!important}
+main>*:last-child{padding-bottom:80px!important}
+main>*:first-child{padding-bottom:56px!important}
+.ligne-calc b{white-space:nowrap}
+footer{position:relative;background:var(--fond);border-radius:30px 30px 0 0;margin-top:-30px;box-shadow:0 -12px 30px oklch(0.2 0.01 60 / .07)}
+/* étiquettes et titres */
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-style:normal;font-size:12px;background:oklch(0.9 0.06 82);color:oklch(0.4 0.08 70);padding:7px 13px;border-radius:999px;margin-bottom:4px}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:999px;background:oklch(0.62 0.12 75)}
+.titre::after,.titre-s::after{content:"";display:block;width:46px;height:5px;border-radius:9px;background:var(--or);margin-top:16px}
+.section .chapo,.etapes p,.atout p,.inclus p,.outil .exemple,.bloc-change .chapo{display:none!important}
+/* haut de page */
+.hero{background:radial-gradient(120% 60% at 50% 0%,oklch(0.9 0.07 82 / .55),transparent 70%)}
+.hero .accroche{font-size:44px!important}
+/* cartes des carrousels */
+.carrousel>*{box-shadow:0 14px 30px oklch(0.2 0.01 60 / .10);border-color:transparent!important}
+.scene li{border-top:5px solid var(--or)!important}
+.scene p{font-size:16.5px}
+.etapes li{background:oklch(0.97 0.012 82);border:0!important;border-radius:24px;padding:24px!important;box-shadow:0 14px 30px oklch(0.2 0.01 60 / .08)}
+.etapes .num{font-size:54px}
+.atout{background:#fff!important;border-radius:22px;display:flex;align-items:center;gap:14px;min-height:96px}
+.atout::before{content:"✓";flex:none;width:38px;height:38px;border-radius:999px;background:var(--encre);color:var(--or);display:flex;align-items:center;justify-content:center;font-weight:800}
+.formule{box-shadow:0 14px 30px oklch(0.2 0.01 60 / .10)}
+.formule .prix{font-size:56px}
+.inclus{display:flex;flex-direction:column;justify-content:center;min-height:150px}
+/* phrase choc et calcul */
+.chute{background:var(--encre);color:oklch(0.97 0.008 85);padding:24px;border-radius:24px;font-size:22px!important;line-height:1.15;box-shadow:0 18px 36px oklch(0.2 0.01 60 / .18)}
+.ligne-calc.total{background:oklch(0.93 0.06 145);border-radius:16px;padding:16px 18px!important;margin-top:4px}
+/* tableau comparatif des tarifs */
+.table-zone table{min-width:0!important;font-size:12.5px;table-layout:fixed}
+.table-zone th,.table-zone td{padding:10px 5px!important}
+.table-zone th:first-child,.table-zone td:first-child{width:40%;padding-left:12px!important}
+.table-zone thead th small{font-size:11px}
+/* étapes du contact en cartes */
+.etapes-c.carrousel li{background:#fff;border-radius:24px;padding:24px!important}
+/* FAQ en cartes */
+.faq details{background:#fff;border:0!important;border-radius:16px;padding:2px 18px!important;margin-top:10px;box-shadow:0 8px 20px oklch(0.2 0.01 60 / .06)}
+.faq summary{font-size:16.5px!important}
+}
+</style>
+</head>
+<body>
+<header class="tete-simple"><div class="wrap barre"><span class="logo">Kora<span> Lab</span></span><span class="rassure">Gratuit · sans engagement</span></div></header>
+<main>
+
+<div class="m-landing" id="m-landing">
+  <section class="ml-haut" aria-labelledby="ml-h">
+    <span class="ml-badge">Maquette offerte</span>
+    <h2 class="ml-h" id="ml-h">Voyez votre site <span>avant de payer</span></h2>
+    <p class="ml-sous">4 questions, 1 minute. Je vous envoie <b>la maquette de votre site le <span class="ml-date">…</span></b>.</p>
+    <div class="ml-trio"><div><b>0 €</b><small>la maquette</small></div><div><b>48 h</b><small>pour la recevoir</small></div><div><b>0</b><small>engagement</small></div></div>
+
+    <div class="ml-quiz" id="ml-quiz">
+      <div id="ml-form-zone">
+        <div class="ml-prog" aria-hidden="true"><span id="ml-etape-txt">Question 1 sur 4</span><span class="ml-pbar"><i id="ml-barre-prog"></i></span></div>
+        <div class="ml-q actif" data-q="1"><h2>Votre métier ?</h2><div class="ml-chips" data-nom="metier"><button type="button" aria-pressed="false" data-v="Paysagiste">Paysagiste</button><button type="button" aria-pressed="false" data-v="Peintre">Peintre</button><button type="button" aria-pressed="false" data-v="Maçon">Maçon</button><button type="button" aria-pressed="false" data-v="Menuisier">Menuisier</button><button type="button" aria-pressed="false" data-v="Couvreur">Couvreur</button><button type="button" aria-pressed="false" data-v="Plombier">Plombier</button><button type="button" aria-pressed="false" data-v="Électricien">Électricien</button><button type="button" aria-pressed="false" data-v="Carreleur">Carreleur</button><button type="button" aria-pressed="false" data-v="Charpentier">Charpentier</button><button type="button" aria-pressed="false" data-v="Autre métier">Autre métier</button></div></div>
+        <div class="ml-q" data-q="2"><h2>Où travaillez-vous ?</h2><p class="aide">La ville principale où vous intervenez.</p><div class="ml-champ"><label for="ml-ville">Ville</label><input id="ml-ville" autocomplete="address-level2" placeholder="Ex. : Angers"></div><p class="ml-err" id="ml-err-2" hidden role="alert"></p><button type="button" class="ml-suivant" data-suivant="2">Continuer</button><button type="button" class="ml-retour" data-retour="2">← Retour</button></div>
+        <div class="ml-q" data-q="3"><h2>Vous avez déjà un site ?</h2><div class="ml-chips deux" data-nom="site_existant"><button type="button" aria-pressed="false" data-v="Non">Non</button><button type="button" aria-pressed="false" data-v="Oui">Oui</button></div><button type="button" class="ml-retour" data-retour="3">← Retour</button></div>
+        <div class="ml-q" data-q="4"><h2>Où vous envoyer la maquette ?</h2>
+          <div class="ml-champ"><label for="ml-prenom">Prénom</label><input id="ml-prenom" autocomplete="given-name"></div>
+          <div class="ml-champ"><label for="ml-entreprise">Nom de l'entreprise</label><input id="ml-entreprise" autocomplete="organization"></div>
+          <div class="ml-champ"><label for="ml-tel">Téléphone (WhatsApp)</label><input id="ml-tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="06 12 34 56 78"></div>
+          <div class="ml-champ"><label for="ml-mail">E-mail</label><input id="ml-mail" type="email" autocomplete="email"></div>
+          <p class="ml-err" id="ml-err-4" hidden role="alert"></p>
+          <button type="button" class="ml-suivant" id="ml-envoyer">Recevoir ma maquette gratuite</button>
+          <button type="button" class="ml-retour" data-retour="4">← Retour</button>
+        </div>
+        <div class="ml-garanties"><span>Gratuit</span><span>Sans engagement</span><span>Pas de démarchage</span></div>
+      </div>
+      <div class="ml-ok" id="ml-ok" hidden>
+        <span class="coche" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>
+        <h2 class="ml-titre" style="font-size:26px">C'est noté !</h2>
+        <span class="date">Votre maquette arrive le <span class="ml-date">…</span></span>
+        <p>Pour qu'elle vous ressemble encore plus, envoyez-moi 3 ou 4 photos de vos chantiers.</p>
+        <a class="ml-wa" href="https://wa.me/33780935128?text=Bonjour%20Lysandre%2C%20je%20viens%20de%20demander%20ma%20maquette%20gratuite.%20Voici%20mes%20photos%20%3A" rel="noopener">Envoyer mes photos sur WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="ml-bloc ml-blanc" aria-labelledby="ml-t-recu">
+    <span class="ml-etiq">Ce que vous recevez</span>
+    <h2 class="ml-titre" id="ml-t-recu">Votre site, <span>en vrai</span></h2>
+    <div class="ml-recu">
+      <div><i>1</i>Une maquette à votre nom, avec vos prestations</div>
+      <div><i>2</i>Pensée pour votre métier et votre ville</div>
+      <div><i>3</i>Visible sur téléphone, comme vos clients la verront</div>
+    </div>
+    <div class="ml-maqs" aria-label="Exemples de maquettes">
+      <div class="ml-maq"><div class="ec" style="background:oklch(0.93 0.035 135);color:oklch(0.27 0.05 140)"><b>JARDINS MOREL</b><h3>Votre jardin, entretenu toute l'année</h3><span style="background:oklch(0.35 0.07 140)">Demander un devis</span></div><div class="pied">Paysagiste<small>Maquette de démonstration</small></div></div>
+      <div class="ml-maq"><div class="ec" style="background:oklch(0.95 0.01 250);color:oklch(0.28 0.06 255)"><b>ATELIER BLANCHARD</b><h3>Peinture intérieure et façades</h3><span style="background:oklch(0.45 0.13 255)">Appeler maintenant</span></div><div class="pied">Peintre<small>Maquette de démonstration</small></div></div>
+      <div class="ml-maq"><div class="ec" style="background:oklch(0.92 0.02 60);color:oklch(0.3 0.03 50)"><b>RENAUD MAÇONNERIE</b><h3>Murets, dalles et extensions</h3><span style="background:oklch(0.5 0.1 45)">Voir nos chantiers</span></div><div class="pied">Maçon<small>Maquette de démonstration</small></div></div>
+    </div>
+  </section>
+
+  <section class="ml-bloc ml-beige" aria-labelledby="ml-t-obj">
+    <span class="ml-etiq">Vos questions</span>
+    <h2 class="ml-titre" id="ml-t-obj">Il y a <span>forcément un piège ?</span></h2>
+    <div class="ml-obj">
+      <details open><summary>Pourquoi c'est gratuit ?</summary><p>Parce qu'un artisan achète un site quand il le voit. Je préfère vous montrer le vôtre plutôt que de vous convaincre au téléphone.</p></details>
+      <details><summary>Je vais être harcelé au téléphone ?</summary><p>Non. Je vous envoie la maquette sur WhatsApp, une seule fois. C'est vous qui décidez de la suite.</p></details>
+      <details><summary>Et si elle me plaît, ça coûte combien ?</summary><p>190 € pour un site Vitrine, 390 € pour le Complet, 590 € pour le Max. Prix ferme, en ligne en 8 jours maximum.</p></details>
+      <details><summary>Le site m'appartiendra ?</summary><p>Oui : le site et le nom de domaine seront à votre nom.</p></details>
+    </div>
+  </section>
+
+  <section class="ml-bloc ml-nuit ml-final" aria-labelledby="ml-t-fin">
+    <h2 class="ml-titre" id="ml-t-fin" style="color:oklch(0.97 0.008 85)">Votre maquette <span>le <span class="ml-date">…</span></span></h2>
+    <p>4 questions, 1 minute, 0 €.</p>
+    <a class="ml-cta" href="#ml-quiz">Je veux ma maquette gratuite</a>
+  </section>
+
+  <div class="ml-barre" id="ml-barre"><a href="#ml-quiz">Recevoir ma maquette gratuite</a><small>Gratuit · sans engagement · réponse sur WhatsApp</small></div>
+</div>
+
+<div class="wrap mq">
+  <section aria-labelledby="t-mq">
+    <p class="eyebrow">Maquette gratuite</p>
+    <h1 id="t-mq">Voyez votre site <span>avant de payer</span></h1>
+    <p class="intro">Dites-moi votre métier et votre ville. Je vous prépare la maquette de votre site, avec votre nom et vos prestations, sous 48 h.</p>
+    <ul class="points">
+      <li>0 € : la maquette est offerte</li>
+      <li>Aucun engagement, aucun appel obligatoire</li>
+      <li>Réponse sur WhatsApp, quand vous avez 2 minutes</li>
+    </ul>
+    <div class="telephone-mq" aria-hidden="true">
+      <div class="tel-m"><i></i><b>Votre métier, votre ville</b><span class="ph"></span><span class="bt"></span></div>
+      <div class="tel-m t2"><i></i><b>Vos chantiers en photos</b><span class="ph"></span><span class="bt"></span></div>
+      <p class="zero">0 €<small>pour voir votre site</small></p>
+    </div>
+  </section>
+
+  <div class="carte-form" aria-live="polite">
+    <div id="bloc-form">
+      <div class="etapes-f" aria-hidden="true"><span class="actif" id="ind-1"><b>1</b>Votre activité</span><i></i><span id="ind-2"><b>2</b>Vos coordonnées</span></div>
+      <form id="form-maquette" novalidate>
+        <input type="checkbox" name="botcheck" class="piege" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="source" id="f-source">
+        <div id="etape-1" style="display:grid;gap:14px">
+          <h2>Votre activité</h2>
+          <div class="champ"><label for="f-metier">Métier</label><select id="f-metier" name="metier" required><option value="" disabled selected>Choisir votre métier</option><option>Paysagiste</option><option>Peintre</option><option>Maçon</option><option>Menuisier</option><option>Couvreur</option><option>Plombier</option><option>Électricien</option><option>Carreleur</option><option>Charpentier</option><option>Plaquiste</option><option>Autre métier du bâtiment</option></select></div>
+          <div class="champ"><label for="f-ville">Ville où vous travaillez</label><input id="f-ville" name="ville" autocomplete="address-level2" required placeholder="Ex. : Angers"></div>
+          <fieldset class="groupe"><legend>Vous avez déjà un site internet ?</legend>
+            <div class="choix-oui-non">
+              <label><input type="radio" name="site_existant" value="Non" checked><span>Non</span></label>
+              <label><input type="radio" name="site_existant" value="Oui"><span>Oui</span></label>
+            </div>
+          </fieldset>
+          <p class="erreur" id="err-1" hidden role="alert"></p>
+          <button type="button" class="btn-suivant" id="btn-1">Continuer</button>
+        </div>
+        <div id="etape-2" style="display:none;gap:14px">
+          <h2>Où vous envoyer la maquette ?</h2>
+          <div class="ligne2">
+            <div class="champ"><label for="f-prenom">Prénom</label><input id="f-prenom" name="prenom" autocomplete="given-name" required></div>
+            <div class="champ"><label for="f-entreprise">Entreprise</label><input id="f-entreprise" name="entreprise" autocomplete="organization" required></div>
+          </div>
+          <div class="champ"><label for="f-tel">Téléphone (WhatsApp)</label><input id="f-tel" name="telephone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="06 12 34 56 78"></div>
+          <div class="champ"><label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="champ"><label for="f-siret">SIRET (facultatif)</label><input id="f-siret" name="siret" inputmode="numeric" autocomplete="off"><small>Il m'aide à trouver votre fiche Google et vos photos.</small></div>
+          <p class="erreur" id="err-2" hidden role="alert"></p>
+          <button type="submit" class="btn-suivant" id="btn-envoyer">Recevoir ma maquette gratuite</button>
+          <button type="button" class="retour-etape" id="btn-retour">← Modifier mon activité</button>
+        </div>
+        <div class="sous-bouton"><span>Sous 48 h</span><span>Sans engagement</span><span>Pas de démarchage</span></div>
+        <p class="mentions-f">Vos informations servent uniquement à préparer votre maquette. <a href="/confidentialite/">Confidentialité</a></p>
+      </form>
+    </div>
+    <div class="succes" id="bloc-succes" hidden>
+      <span class="coche" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>
+      <h2>C'est noté !</h2>
+      <p>Je prépare votre maquette et je vous l'envoie sous 48 h sur WhatsApp. Pour qu'elle vous ressemble encore plus, envoyez-moi quelques photos de vos chantiers.</p>
+      <a class="btn-wa" href="https://wa.me/33780935128?text=Bonjour%20Lysandre%2C%20je%20viens%20de%20demander%20ma%20maquette%20gratuite.%20Voici%20mes%20photos%20%3A" rel="noopener">Envoyer mes photos sur WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<section class="bande" aria-labelledby="t-comment">
+  <div class="wrap">
+    <p class="eyebrow">Comment ça marche</p>
+    <h2 class="titre-s" id="t-comment">Trois étapes, zéro risque</h2>
+    <ol class="trois carrousel">
+      <li><span class="n">1</span><h3>Vous remplissez ce formulaire</h3><p>Une minute, depuis votre téléphone.</p></li>
+      <li><span class="n">2</span><h3>Je vous envoie votre maquette</h3><p>Sous 48 h, sur WhatsApp, avec votre métier et votre ville.</p></li>
+      <li><span class="n">3</span><h3>Vous décidez</h3><p>Elle vous plaît : votre site est en ligne en 8 jours, dès 190 €. Sinon, vous ne devez rien.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="wrap faq" aria-labelledby="t-faq">
+  <p class="eyebrow">Questions fréquentes</p>
+  <h2 class="titre-s" id="t-faq">Avant de demander</h2>
+  <div style="margin-top:20px">
+    <details><summary>C'est vraiment gratuit ?</summary><p>Oui. La maquette est offerte et ne vous engage à rien. Vous payez seulement si vous décidez de mettre le site en ligne.</p></details>
+    <details><summary>Combien coûte le site si je le veux ?</summary><p>190 € pour un site Vitrine, 390 € pour le Complet, 590 € pour le Max. 30 % à la commande, le solde avant la mise en ligne.</p></details>
+    <details><summary>Vous allez me harceler au téléphone ?</summary><p>Non. Je vous envoie la maquette sur WhatsApp, et c'est vous qui décidez de la suite.</p></details>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap pied">
+    <span class="marque">Kora Lab</span>
+    <a href="mailto:contact@kora-lab.fr">contact@kora-lab.fr</a>
+    <a href="https://www.facebook.com/people/KoraLab/61595979192254/" rel="noopener me" target="_blank">Facebook</a>
+    <a href="/mentions-legales/">Mentions légales</a>
+    <a href="/confidentialite/">Confidentialité</a>
+    <a href="/cookies/">Cookies</a>
+    <a href="/cgv/">CGV</a>
+    <a href="/cgu/">CGU</a>
+    <button type="button" id="gerer-cookies">Gérer mes cookies</button>
+  </div>
+</footer>
+<div class="cookies" id="cookies" role="dialog" aria-labelledby="cookies-titre" hidden>
+  <p id="cookies-titre"><strong>Cookies</strong> : j'utilise Google Analytics pour compter les visites. Rien n'est activé sans votre accord.</p>
+  <div class="cookies-choix" id="cookies-choix" hidden>
+    <label for="ck-mesure"><input type="checkbox" id="ck-mesure"> Mesure d'audience (Google Analytics)</label>
+    <label for="ck-pub" style="display:none"><input type="checkbox" id="ck-pub"> Publicité (Pixel Meta)</label>
+  </div>
+  <div class="cookies-btns">
+    <button type="button" class="btn btn-ligne" id="ck-refuser">Tout refuser</button>
+    <button type="button" class="btn btn-plein" id="ck-accepter">Tout accepter</button>
+  </div>
+  <button type="button" class="cookies-perso" id="ck-perso">Choisir par catégorie</button>
+</div>
+<script>
+/* Cookies */
+(function(){
+  var GA_ID='G-KNCGG0G9PQ';
+  var PIXEL_ID=''; // à remplir avec l'identifiant du Pixel Meta
+  var CLE='kora-cookies';
+  var bandeau=document.getElementById('cookies');
+  var choix=document.getElementById('cookies-choix');
+  var ckMesure=document.getElementById('ck-mesure');
+  var ckPub=document.getElementById('ck-pub');
+  var persoOuvert=false;
+  function lire(){try{var v=JSON.parse(localStorage.getItem(CLE));if(!v||!v.date||Date.now()-v.date>15724800000)return null;return v;}catch(e){return null;}}
+  function ecrire(v){try{v.date=Date.now();localStorage.setItem(CLE,JSON.stringify(v));}catch(e){}}
+  function effacer(prefixes){document.cookie.split(';').forEach(function(c){var n=c.split('=')[0].trim();if(!prefixes.some(function(p){return n.indexOf(p)===0;}))return;var d=location.hostname.replace(/^www\./,'');['','.'+d,d].forEach(function(dom){document.cookie=n+'=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/'+(dom?'; domain='+dom:'');});});}
+  function chargerGA(){
+    if(window.__ga||!GA_ID)return;window.__ga=true;
+    var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};
+    gtag('js',new Date());gtag('config',GA_ID,{allow_google_signals:false,allow_ad_personalization_signals:false});
+  }
+  function chargerPixel(){
+    if(window.__px||!PIXEL_ID)return;window.__px=true;
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init',PIXEL_ID);fbq('track','PageView');
+  }
+  function appliquer(v){if(v.mesure)chargerGA();if(v.pub)chargerPixel();}
+  function valider(v){ecrire(v);bandeau.hidden=true;if(!v.mesure)effacer(['_ga']);if(!v.pub)effacer(['_fbp','_fbc']);if((window.__ga&&!v.mesure)||(window.__px&&!v.pub)){location.reload();return;}appliquer(v);}
+  document.getElementById('ck-accepter').addEventListener('click',function(){
+    if(persoOuvert){valider({mesure:ckMesure.checked,pub:ckPub.checked});}else{valider({mesure:true,pub:true});}
+  });
+  document.getElementById('ck-refuser').addEventListener('click',function(){valider({mesure:false,pub:false});});
+  document.getElementById('ck-perso').addEventListener('click',function(){
+    persoOuvert=true;choix.hidden=false;this.hidden=true;document.getElementById('ck-accepter').textContent='Enregistrer mes choix';
+  });
+  document.getElementById('gerer-cookies').addEventListener('click',function(){
+    var v=lire()||{};ckMesure.checked=!!v.mesure;ckPub.checked=!!v.pub;
+    persoOuvert=true;choix.hidden=false;document.getElementById('ck-perso').hidden=true;
+    document.getElementById('ck-accepter').textContent='Enregistrer mes choix';bandeau.hidden=false;
+  });
+  var deja=lire();if(deja){appliquer(deja);}else{bandeau.hidden=false;}
+})();
+(function(){
+  var KEY='fea83f91-3e74-41fd-a684-ecf889100110';
+  var f=document.getElementById('form-maquette');
+  var e1=document.getElementById('etape-1'), e2=document.getElementById('etape-2');
+  var i1=document.getElementById('ind-1'), i2=document.getElementById('ind-2');
+  /* Provenance de la visite (pub Meta, etc.) */
+  try{var q=new URLSearchParams(location.search);var src=['utm_source','utm_campaign','utm_content'].map(function(k){return q.get(k)?k+'='+q.get(k):'';}).filter(Boolean).join(' ');document.getElementById('f-source').value=src||(q.get('fbclid')?'facebook':'direct');}catch(err){}
+  function manque(zone){return [].slice.call(zone.querySelectorAll('[required]')).filter(function(c){return !c.value.trim();});}
+  function dire(id,txt){var p=document.getElementById(id);p.hidden=!txt;p.textContent=txt||'';}
+  function nom(c){return document.querySelector('label[for="'+c.id+'"]').textContent;}
+  document.getElementById('btn-1').addEventListener('click',function(){
+    var m=manque(e1); if(m.length){dire('err-1','Il manque : '+m.map(nom).join(', ')+'.');m[0].focus();return;}
+    dire('err-1','');e1.style.display='none';e2.style.display='grid';i1.classList.remove('actif');i2.classList.add('actif');
+    document.getElementById('f-prenom').focus();
+  });
+  document.getElementById('btn-retour').addEventListener('click',function(){e2.style.display='none';e1.style.display='grid';i2.classList.remove('actif');i1.classList.add('actif');});
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var m=manque(e2); if(m.length){dire('err-2','Il manque : '+m.map(nom).join(', ')+'.');m[0].focus();return;}
+    var tel=document.getElementById('f-tel').value.replace(/[\s.\-]/g,'');
+    if(!/^(\+33|0033|0)[1-9]\d{8}$/.test(tel)){dire('err-2','Le numéro de téléphone ne semble pas complet : 10 chiffres, par exemple 06 12 34 56 78.');document.getElementById('f-tel').focus();return;}
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(document.getElementById('f-mail').value.trim())){dire('err-2',"L'adresse e-mail ne semble pas valide.");document.getElementById('f-mail').focus();return;}
+    dire('err-2','');
+    var d=new FormData(f); if(d.get('botcheck'))return;
+    d.append('access_key',KEY);
+    d.append('subject','Demande de maquette : '+d.get('metier')+' à '+d.get('ville'));
+    d.append('from_name','Site Kora Lab, maquette gratuite');
+    var b=document.getElementById('btn-envoyer'); b.disabled=true; b.textContent='Envoi…';
+    fetch('https://api.web3forms.com/submit',{method:'POST',body:d}).then(function(r){return r.json();}).then(function(j){
+      if(!j.success)throw new Error();
+      document.getElementById('bloc-form').hidden=true; document.getElementById('bloc-succes').hidden=false;
+      if(window.fbq){fbq('track','Lead');} if(window.gtag){gtag('event','generate_lead');}
+    }).catch(function(){
+      dire('err-2',"L'envoi n'a pas marché. Écrivez-moi directement sur WhatsApp au 07 80 93 51 28.");
+    }).then(function(){b.disabled=false;b.textContent='Recevoir ma maquette gratuite';});
+  });
+})();
+/* Landing mobile : questionnaire en 4 questions */
+(function(){
+  var r=document.getElementById('m-landing'); if(!r)return;
+  var KEY='fea83f91-3e74-41fd-a684-ecf889100110', rep={metier:'',ville:'',site_existant:''}, q=1;
+  var d=new Date(); d.setDate(d.getDate()+2);
+  var dt=d.toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'});
+  r.querySelectorAll('.ml-date').forEach(function(s){s.textContent=dt;});
+  function aller(n){q=n;r.querySelectorAll('.ml-q').forEach(function(x){x.classList.toggle('actif',+x.dataset.q===n);});
+    document.getElementById('ml-etape-txt').textContent='Question '+n+' sur 4';document.getElementById('ml-barre-prog').style.width=(n*25)+'%';
+    var champ=r.querySelector('.ml-q.actif input'); if(champ&&n!==1)setTimeout(function(){champ.focus({preventScroll:true});},260);}
+  r.querySelectorAll('.ml-chips').forEach(function(g){g.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){
+    g.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+    rep[g.dataset.nom]=b.dataset.v; setTimeout(function(){aller(q+1);},220);});});});
+  function err(id,t){var p=document.getElementById(id);p.hidden=!t;p.textContent=t||'';}
+  r.querySelector('[data-suivant="2"]').addEventListener('click',function(){var v=document.getElementById('ml-ville').value.trim();if(!v){err('ml-err-2','Indiquez votre ville.');return;}err('ml-err-2','');rep.ville=v;aller(3);});
+  document.getElementById('ml-ville').addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();r.querySelector('[data-suivant="2"]').click();}});
+  r.querySelectorAll('[data-retour]').forEach(function(b){b.addEventListener('click',function(){aller(+b.dataset.retour-1);});});
+  document.getElementById('ml-envoyer').addEventListener('click',function(){
+    var f={prenom:'ml-prenom',entreprise:'ml-entreprise',telephone:'ml-tel',email:'ml-mail'},vals={},manque=[];
+    Object.keys(f).forEach(function(k){vals[k]=document.getElementById(f[k]).value.trim();if(!vals[k])manque.push(document.querySelector('label[for="'+f[k]+'"]').textContent);});
+    if(manque.length){err('ml-err-4','Il manque : '+manque.join(', ')+'.');return;}
+    if(!/^(\+33|0033|0)[1-9]\d{8}$/.test(vals.telephone.replace(/[\s.\-]/g,''))){err('ml-err-4','Le numéro ne semble pas complet : 10 chiffres, par exemple 06 12 34 56 78.');return;}
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(vals.email)){err('ml-err-4',"L'adresse e-mail ne semble pas valide.");return;}
+    err('ml-err-4','');
+    var data=new FormData(); Object.keys(rep).forEach(function(k){data.append(k,rep[k]);}); Object.keys(vals).forEach(function(k){data.append(k,vals[k]);});
+    data.append('source',(document.getElementById('f-source')||{}).value||'mobile'); data.append('access_key',KEY);
+    data.append('subject','Demande de maquette : '+rep.metier+' à '+rep.ville); data.append('from_name','Site Kora Lab, maquette gratuite (mobile)');
+    var b=this; b.disabled=true; b.textContent='Envoi…';
+    fetch('https://api.web3forms.com/submit',{method:'POST',body:data}).then(function(x){return x.json();}).then(function(j){
+      if(!j.success)throw new Error();
+      document.getElementById('ml-form-zone').hidden=true; document.getElementById('ml-ok').hidden=false;
+      document.getElementById('ml-barre').classList.add('cache');
+      if(window.fbq){fbq('track','Lead');} if(window.gtag){gtag('event','generate_lead');}
+    }).catch(function(){err('ml-err-4',"L'envoi n'a pas marché. Écrivez-moi directement sur WhatsApp au 07 80 93 51 28.");})
+    .then(function(){b.disabled=false;b.textContent='Recevoir ma maquette gratuite';});
+  });
+  /* la barre fixe disparaît quand le questionnaire est à l'écran */
+  var barre=document.getElementById('ml-barre'), quiz=document.getElementById('ml-quiz');
+  if('IntersectionObserver' in window){new IntersectionObserver(function(e){barre.classList.toggle('cache',e[0].isIntersecting||!document.getElementById('ml-ok').hidden);},{threshold:.25}).observe(quiz);}
+  r.querySelectorAll('a[href="#ml-quiz"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();quiz.scrollIntoView({behavior:'smooth',block:'center'});});});
+})();
+
+</script>
+<script>
+(function(){
+  function vis(c){return [].filter.call(c.children,function(k){return !k.hidden;});}
+  function cible(c,k){return k.offsetLeft-c.offsetLeft-(c.clientWidth-k.offsetWidth)/2;}
+  function actif(c,box){var v=vis(c);if(!v.length)return;var milieu=c.scrollLeft+c.clientWidth/2,i0=0,best=1e9;v.forEach(function(k,i){var d=Math.abs(k.offsetLeft-c.offsetLeft+k.offsetWidth/2-milieu);if(d<best){best=d;i0=i;}});[].forEach.call(box.children,function(b,i){b.setAttribute('aria-current',i===i0?'true':'false');});}
+  function construire(c,box){var v=vis(c);box.innerHTML='';v.forEach(function(k,i){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Aller à l\u2019élément '+(i+1)+' sur '+v.length);b.addEventListener('click',function(){c.scrollTo({left:cible(c,k),behavior:'smooth'});});box.appendChild(b);});actif(c,box);}
+  function depart(c){var v=vis(c),n=parseInt(c.getAttribute('data-depart')||'0',10);if(v[n])c.scrollLeft=cible(c,v[n]);}
+  document.querySelectorAll('.carrousel').forEach(function(c){
+    var box=document.createElement('div');box.className='points-c';c.parentNode.insertBefore(box,c.nextSibling);
+    if(getComputedStyle(c).overflowX==='auto'){depart(c);window.addEventListener('load',function(){depart(c);actif(c,box);});if(document.fonts&&document.fonts.ready){document.fonts.ready.then(function(){depart(c);actif(c,box);});}}
+    construire(c,box);
+    c.addEventListener('scroll',function(){actif(c,box);},{passive:true});
+    new MutationObserver(function(){construire(c,box);c.scrollLeft=0;actif(c,box);}).observe(c,{attributes:true,subtree:true,attributeFilter:['hidden']});
+  });
+})();
+</script>
+</body>
+</html>
