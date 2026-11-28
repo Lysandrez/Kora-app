@@ -539,12 +539,12 @@ footer{position:relative;background:var(--fond);border-radius:30px 30px 0 0;marg
 
   <section class="mt-bloc mt-nuit" aria-labelledby="mt-t-calc">
     <span class="mt-etiq">Le calcul</span>
-    <h2 class="mt-titre" id="mt-t-calc" style="color:oklch(0.97 0.008 85)">Il se rembourse <span>en un seul client</span></h2>
+    <h2 class="mt-titre" id="mt-t-calc" style="color:oklch(0.97 0.008 85)">Remboursé <span>en quelques clients</span></h2>
     <div class="mt-calc">
       <label for="mt-range">Combien vous rapporte un nouveau client ?</label>
-      <output id="mt-val" for="mt-range">400 €</output>
-      <input type="range" id="mt-range" min="50" max="5000" step="50" value="400">
-      <p class="res" id="mt-res">Un seul nouveau client trouvé grâce au site rembourse le Complet.</p>
+      <output id="mt-val" for="mt-range">100 €</output>
+      <input type="range" id="mt-range" min="20" max="2000" step="10" value="100">
+      <p class="res" id="mt-res" aria-live="polite"><b>4 clients</b> trouvés grâce au site remboursent le Complet. À partir du 5<sup>e</sup>, tout est pour vous.</p>
     </div>
     <p class="mt-perte">Chaque semaine sans site, des personnes à qui l'on a parlé de vous vous cherchent sur Google, ne vous trouvent pas et contactent quelqu'un d'autre.</p>
   </section>
@@ -556,7 +556,7 @@ footer{position:relative;background:var(--fond);border-radius:30px 30px 0 0;marg
       <details open><summary>Pourquoi c'est si peu cher ?</summary><p>Je travaille seul, sans bureaux ni commerciaux, avec des outils modernes. <b>Vous payez votre site, pas une agence.</b></p></details>
       <details><summary>Et si le site ne me plaît pas ?</summary><p>Vous pouvez d'abord <b>demander la maquette gratuite</b> : vous voyez votre site avant de payer quoi que ce soit. Après la commande, vous avez jusqu'à 3 séries de retouches, et le solde n'est réglé qu'à la mise en ligne.</p></details>
       <details><summary>Je n'y connais rien, et je n'ai pas le temps</summary><p>Vous m'envoyez vos photos et vos prestations sur WhatsApp, <b>2 minutes</b>. Je m'occupe du reste : textes, Google, nom de domaine, mise en ligne.</p></details>
-      <details><summary>Est-ce que ça va me ramener des clients ?</summary><p>Personne ne peut garantir la première place sur Google, je ne le promets pas. Votre site est construit sur ce que tapent vos clients : <b>votre activité et votre ville</b>. Et un seul nouveau client suffit souvent à le rembourser.</p></details>
+      <details><summary>Est-ce que ça va me ramener des clients ?</summary><p>Personne ne peut garantir la première place sur Google, je ne le promets pas. Votre site est construit sur ce que tapent vos clients : <b>votre activité et votre ville</b>. Et quelques nouveaux clients suffisent à le rembourser.</p></details>
       <details><summary>Et si je veux arrêter un jour ?</summary><p><b>Le site et le nom de domaine sont à votre nom.</b> La maintenance est sans engagement : vous partez quand vous voulez, avec votre site.</p></details>
     </div>
   </section>
@@ -982,8 +982,8 @@ footer{position:relative;background:var(--fond);border-radius:30px 30px 0 0;marg
   function calc(){
     var v=+document.getElementById('mt-range').value, p=D[pack], f=v/p.prix;
     document.getElementById('mt-val').textContent=eur(v);
-    var txt=f>=1.05?'rembourse le '+p.nom+' <b>'+(f>=10?Math.floor(f):f.toFixed(1).replace('.',','))+' fois</b>.':(f>=0.95?'rembourse <b>tout le '+p.nom+'</b>.':'rembourse <b>'+Math.round(f*100)+' %</b> du '+p.nom+'.');
-    document.getElementById('mt-res').innerHTML='Un seul nouveau client trouvé grâce au site '+txt;
+    var n=Math.max(1,Math.ceil(p.prix/v));
+    document.getElementById('mt-res').innerHTML=n===1?'<b>Un seul client</b> trouvé grâce au site rembourse le '+p.nom+'. Tous les suivants sont pour vous.':'<b>'+n+' clients</b> trouvés grâce au site remboursent le '+p.nom+'. À partir du '+(n+1)+'<sup>e</sup>, tout est pour vous.';
   }
   racine.querySelectorAll('.mt-pack').forEach(function(b){b.addEventListener('click',function(){pack=b.dataset.pack;maj();});});
   racine.querySelectorAll('.mt-m').forEach(function(b){b.addEventListener('click',function(){maint=b.dataset.m;racine.querySelectorAll('.mt-m').forEach(function(x){x.setAttribute('aria-checked',x===b?'true':'false');});maj();});});

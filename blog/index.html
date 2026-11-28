@@ -686,12 +686,12 @@ footer{padding:44px 0 60px;font-size:14px;color:oklch(0.5 0.012 60)}
     });
   });
 
-  /* calculateur */
+  /* calculateur : combien de clients pour rembourser le site */
   var rg=document.getElementById('mp-range');
   if(rg){var fmt=function(n){return n.toLocaleString('fr-FR')+' €';};
-    var calc=function(){var v=+rg.value;document.getElementById('mp-v').textContent=fmt(v);
-      document.getElementById('mp-v2').textContent=fmt(v);document.getElementById('mp-reste').textContent=(v>=190?'+ ':'− ')+fmt(Math.abs(v-190));
-      var f=v/190;document.getElementById('mp-fois-p').innerHTML=f>=1.05?'Le site est remboursé <span id="mp-fois">'+f.toLocaleString('fr-FR',{maximumFractionDigits:1})+'</span> fois':(f>=0.95?'Le site est remboursé en un seul client':'Un client rembourse '+Math.round(f*100)+' % du site');};
+    var calc=function(){var v=+rg.value,n=Math.max(1,Math.ceil(190/v));document.getElementById('mp-v').textContent=fmt(v);
+      document.getElementById('mp-n').textContent=n;
+      document.getElementById('mp-fois-p').innerHTML=n===1?'Un seul client le rembourse. Tous les suivants sont pour vous.':n+' clients le remboursent. À partir du '+(n+1)+'<sup>e</sup>, tout est pour vous.';};
     rg.addEventListener('input',calc);calc();}
 
   /* barre fixe : masquée quand un bouton principal ou un formulaire est à l'écran */
